@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner planner</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+  </head>
+  <body>
+  	<link rel="stylesheet" type="text/css" href="style3.css"/>
+  	<div class="container-fluid">
+		<div class="row" >
+			<div class="col-md-12" id="header">
+				<h1>HOMELETTE<small><em>From the best chefs in the world directly into your kitchen</em></small></h1>
+			</div>
+		</div>
+
+		<div id="fullMenuView">
+			<div class="row" id="dinnerPrepBar">
+				<div class="col-md-9">
+		<h1>My dinner: 4 people</h1></div>
+		<div class='col-md-3'>
+				<button id='goBack' class='btn btn-lg'><span class='glyphicon glyphicon-arrow-left' id='arrow'></span> Go back and edit dinner</button>
+			</div>
+		</div>
+		<div class='row' id="menuRow">
+		<div class='col-md-3'></div><div class='col-md-9' id='dishesAlign'><span id='dishes'></span>Total: <b><span id='totcost'></b></span></div></div><hr/>
+		<div class='row'><div class='col-md-4'></div><div class='col-md-8'><button id='printbutton' class='btn btn-lg'>Print Full Recipe</button></div></div>
+		</div>
+	</div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+	<!-- The application JavaScript code -->
+	<script src="app.js"></script>
+	<script src="dinnerModel.js"></script>
+	<script src="exampleView.js"></script>
+	<script src="dinnerPrepView.js"></script>
+	<script src="fullMenuView.js"></script>
+	<script src="exampleViewController.js"></script>
+		<script src="dishView.js"></script>
+	<script src="sidebarView.js"></script>
+	<script src="selectedDishView.js"></script>
+	<script src="homeScreenView.js"></script>
+  </body>
+</html>
