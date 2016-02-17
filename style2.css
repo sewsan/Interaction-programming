@@ -1,0 +1,209 @@
+
+html, body, .header, #sideBarView {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	background-color:white;
+	height:100%;
+}
+
+html, body, .container-fluid, .row {
+    height: 100%;
+}
+
+h1 {
+	color: black;
+}
+
+small {
+	padding-left: 20px;
+	color: black;
+}
+
+.container-fluid {
+	height:100%;
+}
+
+.header {
+	background-color: #f2f2f2;
+	height: 100px;
+	border: 3px solid black;
+	width: 100%;
+	padding-left:20px;
+
+}
+
+#sidebarView {
+	border:2px black solid;
+	font-size: 12pt;
+	background-color: rgba(255,255,255,0.5);
+	padding-top: 10px;
+	padding-left:10px;
+	margin-left:0px;
+	overflow: hidden;
+}
+
+#dishView {
+	border:2px black solid;
+	font-size: 15pt;
+	background-color: rgba(255,255,255,0.5);
+	padding-top: 10px;
+	padding-left:10px;
+	margin-left:0px;
+	overflow: hidden;
+
+}
+
+#middlerow {
+	background-color:#f2f2f2 ;
+	margin-top: 10px;
+}
+
+hr {
+	border: 0;
+	height: 3px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+#choises {
+	color:#800000;
+}
+
+#total {
+	color:#800000;
+}
+
+#confirmbutton {
+	height:40px;
+	background-color:orange;
+    border-radius: 0;
+    color: black;
+    border: 2px solid gray;
+   -webkit-box-shadow: 8px 7px 5px -1px rgba(89,86,89,1);
+	-moz-box-shadow: 8px 7px 5px -1px rgba(89,86,89,1);
+	box-shadow: 8px 7px 5px -1px rgba(89,86,89,1);
+	margin-bottom:20px;
+	font-size: 12px;
+	width:70%;
+	text-align:center;
+	color:gray;
+}
+
+#confirm {
+	text-align:center;
+	padding-top:20px;
+	height:373px;
+}
+
+#selector {
+	height:120px;
+	background-color: rgba(255,215,0,0.3);
+	border:2px solid black;
+}
+
+#pulldown {
+	font-size:15px;
+	padding-top:7px;
+}
+
+
+.im {
+	display:inline-block;
+	margin:30px;
+}
+
+#name {
+	margin-top:35px;
+	margin-bottom: 0px;
+	border:2px solid black;
+}
+
+#box {
+	background-color: lightgrey;
+	border:2px solid black;
+	height:30px;
+	width:115px;
+	font-size: 15px;
+	text-align: center;
+}
+
+#searchB {
+	background-color: orange;
+}
+
+#box2 {
+	word-break: break-all;
+	width:115px;
+	height:100px;
+	padding-top:10px;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+
+}
+
+#box3 {
+	width:100%;
+	font-size:18px;
+	text-transform: uppercase;
+
+}
+
+#box4 {
+	word-break: break-all;
+	width:100%;
+	height:100%;
+	padding-top:10px;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+
+#dishInfo {
+	background-color:rgba(255,215,0,0.3);
+	border:2px solid black;
+	height:500px;
+	margin-top: 20px;
+}
+
+#title {
+	font-size: 20px;
+}
+
+#dishIngred {
+	font-size:12px;
+	height:500px;
+}
+
+#ingRow {
+	height:30px;
+}
+
+#backButton {
+	height:40px;
+	background-color:rgba(255,215,0,0.3);
+    border-radius: 0;
+    color: black;
+    border: 2px solid gray;
+	margin-bottom:20px;
+	font-size: 12px;
+	width:70%;
+	text-align:center;
+}
+
+#arrow {
+	float:left;
+}
+
+
+#tot {
+	float:right;
+}
+
+#selectedDishView {
+	overflow:hidden;
+}
