@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner planner</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+  </head>
+  <body>
+  	<link rel="stylesheet" type="text/css" href="style2.css"/>
+<!-- Header -->
+<div class="header">
+	<h1>HOMELETTE<small><em>From the best chefs in the world directly into your kitchen</em></small></h1>
+</div>	
+<!-- home screen -->
+<!--sidebar view -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3" id="sidebarView">
+				<p><strong>My dinner</strong></p>
+        <div class="row" id="top">
+          <div class="col-md-3"><p>People: </p></div>
+          <div class="col-md-3">
+          <!-- change here so you connect buttons to the input nr via some js function -->
+          <span id="numberOfGuests"></span>
+          </div>
+          <div class="col-md-6">
+          <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+          <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+          </div>
+        </div>
+        <div class="row" id="middlerow">
+        <div class="col-md-4"> </div>
+          <div class="col-md-4"><p>Dish name</p></div>
+          <div class="col-md-4"><p>Cost</p></div>
+        </div> <!-- change here so it gets info from js ... -->
+        <div class="row" id="choises">
+        <div class="col-md-4"><span id="number"></span></div>
+        <div class="col-md-4"><span id="dName"></span></div>
+        <div class="col-md-4"><span id="cost"></span></div>
+        </div>
+        <div class="row" id="choises">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><p>Pending</p></div>
+        <div class="col-md-4"><p>0.00</p></div></div>
+        <!-- to here -->
+        <hr/><!-- and here... -->
+        <div class="row" id="total">
+        <div class="col-md-6"></div>
+        <div class="col-md-6"><p>SEK <span id="tot"></span></p></div>
+        </div><!-- to here -->
+        <div class="row" id="confirm">
+        <div class="col-md-12"><button id="confirmbutton" class="btn btn-lg" >Confirm dinner</button></div>
+        </div>
+  	</div>
+
+
+    <!-- select dish view -->
+      <div class="row" id="dishView">
+      <div class="col-md-12" id="selector">
+      <p>Select Dish</p><hr/>
+        <div class="row">
+        <div class="col-md-4">
+        <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter key words" aria-describedby="basic-addon2">
+        <span class="input-group-btn"><button class = "btn btn-default" id="searchB" type = "button">Search</button></span>
+        </div>
+        </div>
+          <div class="form-group col-md-4" id="pulldown">
+              <select>
+                <option value="main">Main</option>
+                <option value="starter">Starter</option>
+                <option value="dessert">Dessert</option>
+              </select>
+              </div>
+          </div>
+          </div>
+          <div class="row">
+        <div class="col-md-12">
+      <div>
+      <span id="dishes"></span>
+      </div>
+      </div>
+	</div>
+</div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+	<!-- The application JavaScript code -->
+	<script src="app.js"></script>
+	<script src="dinnermodel.js"></script>
+	<script src="exampleView.js"></script>
+	<script src="exampleViewController.js"></script>
+  <script src="dishView.js"></script>
+  <script src="sidebarView.js"></script>
+  <script src="selectedDishView.js"></script>
+  <script src="fullMenuView.js"></script>
+  <script src="dinnerPrepView.js"></script>
+  <script src="homeScreenView.js"></script>
+  </body>
+</html>
